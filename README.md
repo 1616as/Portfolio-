@@ -5,7 +5,6 @@ A machine learning project that classifies emails as spam or not using Natural L
 ## 🛠 Technologies Used
 - Python
 - Scikit-learn
-- Pandas
 - Jupyter Notebook
 
 ## 🔑 Features
