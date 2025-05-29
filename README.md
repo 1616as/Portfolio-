@@ -1,27 +1,15 @@
-# Portfolio-Institute Management System
+<?php
+// Simple connection test (replace with your DB credentials)
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "institute_db";
 
-This is a web-based application developed using PHP and MySQL to manage various aspects of an educational institute.
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-## 🔧 Features
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-- Add, update, delete student records
-- Manage faculty data
-- Handle course and department information
-- Generate reports
-- Admin login system
-
-## 🛠️ Technologies Used
-
-- Frontend: HTML, CSS
-- Backend: PHP
-- Database: MySQL
-
-## 📁 Project Structure
-
-- `index.php`: Main interface
-- `db_connection.php`: Database connection settings
-- `style.css`: Basic styling
-
-## 💡 Purpose
-
-This project was created as part of my academic learning to understand CRUD operations, database connectivity, and user interface design in web development.
+echo "Connected successfully to Institute Management System database.";
+?>
