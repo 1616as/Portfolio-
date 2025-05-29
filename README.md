@@ -1,32 +1,23 @@
-# Institute Management System
 
-This is a simple PHP-MySQL web application to manage student and faculty records in an institute. It supports user login, course management, and student registration.
+# Food Ordering System
 
-## Features
-- Add/view/edit/delete students and courses
-- Login/logout system
-- Admin dashboard
+A simple food ordering platform where users can browse items, place orders, and view order history.
 
-## Technologies Used
-- PHP
-- MySQL
-- HTML, CSS
+## 🛠 Technologies Used
+- HTML/CSS
+- JavaScript
+- PHP & MySQL
 
-## How to Run
-1. Import SQL file in XAMPP/phpMyAdmin
-2. Run `index.php` from XAMPP localhost
-<?php
-// Simple connection test (replace with your DB credentials)
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "institute_db";
+## 🔑 Features
+- User registration/login
+- Menu display
+- Order placement and tracking
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+## 📁 Sample Code Snippet
+```html
+<button onclick="orderFood()">Order Now</button>
+<script>
+function orderFood() {
+    alert("Your order has been placed!");
 }
-
-echo "Connected successfully to Institute Management System database.";
-?>
+</script>
