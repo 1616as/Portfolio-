@@ -1,21 +1,23 @@
-# Sanitation X-Press Management System
+# Email Spam Detection (AI Project)
 
-An internal tool to manage sanitation workers, their schedules, and request status tracking.
+A machine learning project that classifies emails as spam or not using Natural Language Processing.
 
 ## 🛠 Technologies Used
-- HTML
-- CSS
-- PHP
-- MySQL
+- Python
+- Scikit-learn
+- Pandas
+- Jupyter Notebook
 
 ## 🔑 Features
-- Assign tasks to workers
-- Track completion status
-- Admin reporting panel
+- Naive Bayes classification
+- Accuracy report
+- Predict custom email input
 
 ## 📁 Sample Code Snippet
-```php
-<?php
-$query = "SELECT * FROM tasks WHERE status='pending'";
-$result = mysqli_query($conn, $query);
-?>
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+
+model = MultinomialNB()
+model.fit(X_train, y_train)
+print("Accuracy:", model.score(X_test, y_test))
